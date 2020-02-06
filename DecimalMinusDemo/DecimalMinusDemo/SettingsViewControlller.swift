@@ -50,7 +50,7 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPicker
         
         self.pickerView.delegate = self
         self.pickerView.dataSource = self
-        lengthConversion = ["Yards", "Meters"]
+        lengthConversion = ["Yards", "Meters", "Miles"]
         var pickerReact = picker.frame
         pickerReact.origin.x = 30
         pickerReact.origin.y = 400

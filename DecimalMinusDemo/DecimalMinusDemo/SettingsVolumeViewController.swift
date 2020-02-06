@@ -49,7 +49,7 @@ class SettingsVolumeViewController: UIViewController, UIPickerViewDataSource, UI
         
         self.volPicker.delegate = self
         self.volPicker.dataSource = self
-        lengthConversion = ["Gallons", "Liters"]
+        lengthConversion = ["Gallons", "Liters", "Quarts"]
         var pickerReact = picker.frame
         pickerReact.origin.x = 30
         pickerReact.origin.y = 400

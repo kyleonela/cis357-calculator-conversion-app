@@ -28,6 +28,8 @@ class ViewController: UIViewController{
     var finalName2 = "Meters"
     var finalName3 = "Gallons"
     var finalName4 = "Liters"
+    var finalName5 = "Miles"
+    var finalName6 = "Quarts"
     
     var isOnLength = true; //switching screens, if is on length screen, its true, volume screen then false
     var settingHasBeenSaved = false;
@@ -41,13 +43,30 @@ class ViewController: UIViewController{
         if(metersField.text == "" && yardsField.text == ""){
             print("Please enter values")
         } else{
-            if(topField.text == "Yards" && metersField.text == ""){
+            metersField.text = ""
+            if(topField.text == "Yards" && bottomField.text == "Meters"){
                 let conversion = Double(yardsField.text!)
                 let converted = conversion! * 0.9144
                 metersField.text = String(converted)
-            }else if (topField.text == "Meters" && metersField.text == ""){
+            }else if (topField.text == "Meters" && bottomField.text == "Yards"){
                 let conversion = Double(yardsField.text!)
                 let converted = conversion! * 1.09361
+                metersField.text = String(converted)
+            } else if (topField.text == "Miles" && bottomField.text == "Meters"){
+                let conversion = Double(yardsField.text!)
+                let converted = conversion! * 1609.34
+                metersField.text = String(converted)
+            } else if (topField.text == "Miles" && bottomField.text == "Yards"){
+                let conversion = Double(yardsField.text!)
+                let converted = conversion! * 1760.0
+                metersField.text = String(converted)
+            } else if (topField.text == "Yards" && bottomField.text == "Miles"){
+                let conversion = Double(yardsField.text!)
+                let converted = conversion! * 0.000568182
+                metersField.text = String(converted)
+            } else if (topField.text == "Meters" && bottomField.text == "Miles"){
+                let conversion = Double(yardsField.text!)
+                let converted = conversion! * 0.000621371
                 metersField.text = String(converted)
             }
             else {
@@ -60,13 +79,30 @@ class ViewController: UIViewController{
         if(gallonsField.text == "" && litersField.text == ""){
             print("Please enter values")
         }else{
-            if(volumeTopField.text == "Liters" && litersField.text == ""){
+            litersField.text = ""
+            if(volumeTopField.text == "Liters" && volumeBottomField.text == "Gallons"){
                 let conversion = Double(gallonsField.text!)
                 let converted = conversion! * 0.264172
                 litersField.text = String(converted)
-            }else if (volumeTopField.text == "Gallons" && litersField.text == ""){
+            }else if (volumeTopField.text == "Gallons" && volumeBottomField.text == "Liters"){
                 let conversion = Double(gallonsField.text!)
                 let converted = conversion! * 3.78541
+                litersField.text = String(converted)
+            } else if (volumeTopField.text == "Liters" && volumeBottomField.text == "Quarts"){
+                let conversion = Double(gallonsField.text!)
+                let converted = conversion! * 1.05669
+                litersField.text = String(converted)
+            } else if (volumeTopField.text == "Gallons" && volumeBottomField.text == "Quarts"){
+                let conversion = Double(gallonsField.text!)
+                let converted = conversion! * 4.0
+                litersField.text = String(converted)
+            } else if (volumeTopField.text == "Quarts" && volumeBottomField.text == "Liters"){
+                let conversion = Double(gallonsField.text!)
+                let converted = conversion! * 0.946353
+                litersField.text = String(converted)
+            } else if (volumeTopField.text == "Quarts" && volumeBottomField.text == "Gallons"){
+                let conversion = Double(gallonsField.text!)
+                let converted = conversion! * 0.25
                 litersField.text = String(converted)
             }
             else{
