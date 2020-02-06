@@ -35,7 +35,6 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource, UIPicker
         vc.settingHasBeenSaved = self.settingSaved
     }
 
-    
     var picker = UIPickerView()
     var picker2 = UIPickerView()
     var lengthConversion: [String] = [String]()
