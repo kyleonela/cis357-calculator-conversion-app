@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3368F4C323EA346100262107 /* SettingsViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3368F4C223EA346100262107 /* SettingsViewControlller.swift */; };
 		9E8B53FC1BB58D6B007E79E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B53FB1BB58D6B007E79E2 /* AppDelegate.swift */; };
 		9E8B53FE1BB58D6B007E79E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B53FD1BB58D6B007E79E2 /* ViewController.swift */; };
 		9E8B54011BB58D6B007E79E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B53FF1BB58D6B007E79E2 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		9E8B54061BB58D6B007E79E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8B54041BB58D6B007E79E2 /* LaunchScreen.xib */; };
 		9E8B54121BB58D6B007E79E2 /* DecimalMinusDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B54111BB58D6B007E79E2 /* DecimalMinusDemoTests.swift */; };
 		9E8B541C1BB5ADB0007E79E2 /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B541B1BB5ADB0007E79E2 /* DecimalMinusTextField.swift */; };
+		E7C1682B23EBDB7A00C9A3F3 /* SettingsVolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C1682A23EBDB7A00C9A3F3 /* SettingsVolumeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3368F4C223EA346100262107 /* SettingsViewControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControlller.swift; sourceTree = "<group>"; };
 		9E8B53F61BB58D6B007E79E2 /* DecimalMinusDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecimalMinusDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8B53FA1BB58D6B007E79E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E8B53FB1BB58D6B007E79E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		9E8B54101BB58D6B007E79E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E8B54111BB58D6B007E79E2 /* DecimalMinusDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalMinusDemoTests.swift; sourceTree = "<group>"; };
 		9E8B541B1BB5ADB0007E79E2 /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalMinusTextField.swift; sourceTree = "<group>"; };
+		E7C1682A23EBDB7A00C9A3F3 /* SettingsVolumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVolumeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		9E8B53F81BB58D6B007E79E2 /* DecimalMinusDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E7C1682A23EBDB7A00C9A3F3 /* SettingsVolumeViewController.swift */,
+				3368F4C223EA346100262107 /* SettingsViewControlller.swift */,
 				9E8B541B1BB5ADB0007E79E2 /* DecimalMinusTextField.swift */,
 				9E8B53FB1BB58D6B007E79E2 /* AppDelegate.swift */,
 				9E8B53FD1BB58D6B007E79E2 /* ViewController.swift */,
@@ -219,9 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3368F4C323EA346100262107 /* SettingsViewControlller.swift in Sources */,
 				9E8B541C1BB5ADB0007E79E2 /* DecimalMinusTextField.swift in Sources */,
 				9E8B53FE1BB58D6B007E79E2 /* ViewController.swift in Sources */,
 				9E8B53FC1BB58D6B007E79E2 /* AppDelegate.swift in Sources */,
+				E7C1682B23EBDB7A00C9A3F3 /* SettingsVolumeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
